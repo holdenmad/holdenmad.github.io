@@ -32,12 +32,12 @@
   font-style: normal;
 }
 
-/* Color Palette */
+/* COLOR PALETTE */
 .tree-green-light {
   color: #99b6b9;
 }
 .tree-green-mid {
-  color: #4E605A;
+  color: #4e605a;
 }
 .tree-green-mid-dark {
   color: #4c645d;
@@ -46,13 +46,14 @@
   color: #404a45;
 }
 
-/* General Styles */
+/* GENERAL STYLES */
 body {
   font-family: "Hind", sans-serif;
   background-image: url("/img/cc038006.png");
   background-repeat: repeat;
   background-size: auto;
   background-color: black;
+  margin: 3em 0;
 }
 
 p,
@@ -62,6 +63,31 @@ ul {
   letter-spacing: 1px;
 }
 
+a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  z-index: 1;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.07em;
+  height: 0.1em;
+  width: 100%;
+  background: linear-gradient(110deg, #e1f549, #29d0be, #6cb8ea, #ff5959);
+  z-index: -1;
+  transition: height 0.25s cubic-bezier(0.6, 0, 0.4, 1);
+}
+
+a:hover::after {
+  height: 1.5em;
+}
+
+/* TODO: Differentiate h1 from title */
 /* h1 {
   font-family: "Lora", sans-serif;
   font-size: 60px;
@@ -75,26 +101,27 @@ h2 {
   font-size: 30px;
   font-weight: 600;
   color: white;
-  text-shadow: 2px 2px #4E605A;
+  text-shadow: 2px 2px #4e605a;
 }
 
+/* SPECIFIC STYLES */
 .title {
   font-family: "Lora", sans-serif;
-  font-size: 70px;
+  font-size: 46px;
   font-weight: 800;
   color: white;
-  text-shadow: 3px 3px #4E605A;
+  text-shadow: 3px 3px #99b6b9;
+  line-height: 1.1em;
 }
 
 .subtitle {
   font-family: "Lora";
-  font-size: 30px;
-  margin-top: -1.5em;
+  font-size: 18px;
+  margin-top: -1.1em;
   font-weight: 600;
   color: white;
-  text-shadow: 2px 2px #4E605A;
-  letter-spacing: .5em;
-  /* word-spacing: 1em; */
+  text-shadow: 2px 2px #4e605a;
+  letter-spacing: 0.5em;
 }
 
 .container {
@@ -118,4 +145,42 @@ h2 {
 
 .text-block {
   text-align: left;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 420px) {
+  .title {
+    font-size: 50px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 600px) {
+  .title {
+    font-size: 70px;
+  }
+  .subtitle {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 800px) {
+  .title {
+    font-size: 80px;
+  }
+  .subtitle {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1178px) {
+  .title {
+    font-size: 100px;
+  }
+  .subtitle {
+    font-size: 40px;
+  }
 }
