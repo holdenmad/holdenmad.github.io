@@ -1,0 +1,121 @@
+/* FONTS */
+@font-face {
+  font-family: Hind;
+  src: url("/fonts/Hind/Hind-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Libre Franklin;
+  src: url("/fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf")
+    format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url("/fonts/Lora/Lora-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gentium Plus;
+  src: url("/fonts/Gentium_Plus/GentiumPlus-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Sansita;
+  src: url("/fonts/Sansita/Sansita-Regular.ttf") format("truetype");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Color Palette */
+.tree-green-light {
+  color: #99b6b9;
+}
+.tree-green-mid {
+  color: #4E605A;
+}
+.tree-green-mid-dark {
+  color: #4c645d;
+}
+.tree-green-dark {
+  color: #404a45;
+}
+
+/* General Styles */
+body {
+  font-family: "Hind", sans-serif;
+  background-image: url("/img/cc038006.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-color: black;
+}
+
+p,
+ul {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* h1 {
+  font-family: "Lora", sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  color: white;
+  text-shadow: 3px 3px green;
+} */
+
+h2 {
+  font-family: "Sansita", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px #4E605A;
+}
+
+.title {
+  font-family: "Lora", sans-serif;
+  font-size: 70px;
+  font-weight: 800;
+  color: white;
+  text-shadow: 3px 3px #4E605A;
+}
+
+.subtitle {
+  font-family: "Lora";
+  font-size: 30px;
+  margin-top: -1.5em;
+  font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px #4E605A;
+  letter-spacing: .5em;
+  /* word-spacing: 1em; */
+}
+
+.container {
+  width: 60vw;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3em;
+}
+
+.trans-white {
+  background-image: url("/img/white_pixel.png");
+  background-repeat: repeat;
+  background-size: fit;
+}
+
+.trans-black {
+  background-image: url("/img/black_pixel.png");
+  background-repeat: repeat;
+  background-size: fit;
+}
+
+.text-block {
+  text-align: left;
+}
