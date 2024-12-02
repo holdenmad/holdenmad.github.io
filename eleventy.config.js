@@ -7,5 +7,5 @@ export default function (eleventyConfig) {
   // eleventyConfig.addPassthroughCopy("./fonts/Hind/Hind-Medium.ttf");
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.setInputDirectory("src");
-  eleventyConfig.setOutputDirectory("docs");
+  eleventyConfig.setOutputDirectory("_site");
 };
