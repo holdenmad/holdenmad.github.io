@@ -5,6 +5,7 @@ I'm a queer, trans, indigenous web developer.
 
 ## TODO 
 - Follow this to fix 11ty problems: https://lea-tortay.com/articles/github-pages-eleventy/
+- Update GH Actions
 
 ## Pages
 
