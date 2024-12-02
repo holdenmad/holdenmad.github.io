@@ -1,0 +1,186 @@
+/* FONTS */
+@font-face {
+  font-family: Hind;
+  src: url("/fonts/Hind/Hind-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Libre Franklin;
+  src: url("/fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf")
+    format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url("/fonts/Lora/Lora-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gentium Plus;
+  src: url("/fonts/Gentium_Plus/GentiumPlus-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Sansita;
+  src: url("/fonts/Sansita/Sansita-Regular.ttf") format("truetype");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* COLOR PALETTE */
+.tree-green-light {
+  color: #99b6b9;
+}
+.tree-green-mid {
+  color: #4e605a;
+}
+.tree-green-mid-dark {
+  color: #4c645d;
+}
+.tree-green-dark {
+  color: #404a45;
+}
+
+/* GENERAL STYLES */
+body {
+  font-family: "Hind", sans-serif;
+  background-image: url("/img/cc038006.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-color: black;
+  margin: 3em 0;
+}
+
+p,
+ul {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  z-index: 1;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.07em;
+  height: 0.1em;
+  width: 100%;
+  background: linear-gradient(110deg, #e1f549, #29d0be, #6cb8ea, #ff5959);
+  z-index: -1;
+  transition: height 0.25s cubic-bezier(0.6, 0, 0.4, 1);
+}
+
+a:hover::after {
+  height: 1.5em;
+}
+
+/* TODO: Differentiate h1 from title */
+/* h1 {
+  font-family: "Lora", sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  color: white;
+  text-shadow: 3px 3px green;
+} */
+
+h2 {
+  font-family: "Sansita", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px #4e605a;
+}
+
+/* SPECIFIC STYLES */
+.title {
+  font-family: "Lora", sans-serif;
+  font-size: 46px;
+  font-weight: 800;
+  color: white;
+  text-shadow: 3px 3px #99b6b9;
+  line-height: 1.1em;
+}
+
+.subtitle {
+  font-family: "Lora";
+  font-size: 18px;
+  margin-top: -1.1em;
+  font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px #4e605a;
+  letter-spacing: 0.5em;
+}
+
+.container {
+  width: 60vw;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3em;
+}
+
+.trans-white {
+  background-image: url("/img/white_pixel.png");
+  background-repeat: repeat;
+  background-size: fit;
+}
+
+.trans-black {
+  background-image: url("/img/black_pixel.png");
+  background-repeat: repeat;
+  background-size: fit;
+}
+
+.text-block {
+  text-align: left;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 420px) {
+  .title {
+    font-size: 50px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 600px) {
+  .title {
+    font-size: 70px;
+  }
+  .subtitle {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 800px) {
+  .title {
+    font-size: 80px;
+  }
+  .subtitle {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1178px) {
+  .title {
+    font-size: 100px;
+  }
+  .subtitle {
+    font-size: 40px;
+  }
+}
